@@ -584,6 +584,7 @@ button {
 .set-list {
 display: flex;
 flex-wrap: wrap;
+margin-bottom: -30px;
 }
 
 .set-list>.item {
