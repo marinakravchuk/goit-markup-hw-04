@@ -110,7 +110,13 @@ li {
     color: #000000;
 }
 
-
+.header-icon {
+    margin-left: 30px;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+}
 /*Header-Навигация */
 .site-nav {
     display: flex;
@@ -312,6 +318,27 @@ button {
     margin-left: 30px;
 }
 
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.icons:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icons {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+
 /*Чем мы занимаемся*/
 .s-about-our-work {
     padding-bottom: 94px;
@@ -359,13 +386,12 @@ button {
 }
 
 .about-us-list .list {
-    display: block;
     margin-right: 30px;
 }
 
 .w-card{
     width: 270px;
-    height: 368px;
+    height: 428px;
     left: 215px;
     top: 1635px;
     
@@ -395,6 +421,7 @@ button {
 .about-us .text {
     display: block;
     margin-top: 10px;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -403,11 +430,15 @@ button {
 }
 
 .work-item:last-child {
-    margin-right: 0;}
+    margin-right: 0;
+}
+
 
 .workers-soc-list {
     display: flex;
     justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .workers-soc-item {
@@ -420,15 +451,76 @@ button {
     margin-right: 0;
 }
 
-.workers-soc-link {
+.workers-soc-link{
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: var(--default-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #ffffff;
+    fill: #AFB1B8;
+}
+
+.workers-soc-link:hover,
+.workers-soc-link:focus {
+    background-color: var(--btn-color-hb);
+}
+.workers-soc-link:hover .workers-soc-icon,
+.workers-soc-link:focus .workers-soc-icon {
+    fill: var(--default-white);
+} 
+
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-clients {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--btn-color-text);
+}
+
+
+.list-clients {
+    display: flex;
+}
+
+.list-item {
+    margin-right: 30px;
+}
+.clients-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    color: #AFB1B8;
+    background-color: #FFFFFF;
+    fill: #AFB1B8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--btn-color-hb);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--btn-color-hb);
 }
 
 
@@ -560,13 +652,29 @@ flex-basis: calc(100% / 3 - 30px);
 }
 
 /*Подвал*/
+.logo-adress {
+margin-right: 70px;
+}
+
+.footer>.container {
+    display: flex;
+    align-items: baseline;
+}
+
     .s-footer {
     max-width: 1600px;
     margin: 0 auto;
     background: var(--bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
 }
+
+.s-footer .footer {
+    display: flex;
+    align-items: baseline;
+}
+
 
     .contact-link-list .item:first-child {
     margin-top: 20px;
@@ -615,5 +723,47 @@ flex-basis: calc(100% / 3 - 30px);
     color: #ffffff;
     }
     
+.title-soc {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
 
+.footer-soc-list{
+display: flex;
+margin-bottom: 30px;
+    }
 
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    }
+
+.footer-soc-icon {
+    fill: #FFFFFF;
+    }
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #ffffff;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--btn-color-hb);
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+    fill: var(--default-white);
+}
