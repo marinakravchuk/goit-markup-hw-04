@@ -384,13 +384,9 @@ button {
     color: var(--btn-color-text);
     margin-bottom: 50px;
 }
+
 .about-us-list {
         display: flex;
-        
-}
-
-.about-us-list .list {
-    margin-right: 30px;
 }
 
 .w-card{
@@ -398,6 +394,8 @@ button {
     height: 428px;
     left: 215px;
     top: 1635px;
+
+    margin-right: 30px;
     
     background-color: #FFFFFF;
 
@@ -412,7 +410,11 @@ button {
 .name-position {
     padding-top: 30px;
     padding-bottom: 30px;
-    /*outline: 1px solid red;*/
+        /*outline: 1px solid red;*/
+}
+
+.name-position .name {
+    margin-bottom: 10px;
 }
 
 .about-us .name {
@@ -424,8 +426,7 @@ button {
 
 .about-us .text {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 16px;
+        margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -441,7 +442,7 @@ button {
 .workers-soc-list {
     display: flex;
     justify-content: center;
-    padding-left: 32px;
+    /*padding-left: 32px;*/
     
 }
 
@@ -623,17 +624,23 @@ flex-basis: calc(100% / 3 - 30px);
 .card {
     width: 370px;
     height: 404px;
-    /*box-shadow: var(--card-shadow);*/
-    /* border-radius: 0px 0px 4px 4px;*/
     overflow: hidden;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
-
+    cursor: pointer;
+    
 }
 
 .card-content {
     padding: 20px 24px;
     
+}
+
+
+.card:hover,
+.card:focus {
+    box-shadow: var(--card-shadow);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
