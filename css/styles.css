@@ -238,7 +238,7 @@ button {
         margin: 0 auto;
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/background-img/hero.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/background-img/hero.jpg);
         background-repeat: no-repeat;
         background-position: center;
 
@@ -368,7 +368,6 @@ button {
 /*Команда*/
 .about-us{
     display: block;
-    max-width: 1600px;
     margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -675,7 +674,6 @@ margin-right: 70px;
 }
 
     .s-footer {
-    max-width: 1600px;
     margin: 0 auto;
     background: var(--bg-color);
     padding-top: 60px;
