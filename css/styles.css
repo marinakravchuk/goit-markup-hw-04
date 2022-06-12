@@ -195,7 +195,7 @@ li {
 
 .contact-links{
     /*display: block;*/
-    align-items: center;
+        align-items: baseline;
     
 }
 
@@ -626,6 +626,8 @@ flex-basis: calc(100% / 3 - 30px);
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
     cursor: pointer;
+
+    
     
 }
 
